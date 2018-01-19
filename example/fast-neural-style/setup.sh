@@ -1,6 +1,6 @@
 if [ ! -d "fast-neural-style" ]; then
   echo "Cloning fast-neural-style repo"
-  git clone https://github.com/jcjohnson/fast-neural-style.git
+  git clone git@github.com:leavesster/fast-neural-style.git
 fi
 
 cd fast-neural-style
