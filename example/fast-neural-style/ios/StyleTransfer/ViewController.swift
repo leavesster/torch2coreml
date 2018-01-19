@@ -16,6 +16,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var loadingView: UIView!
     
+    @IBOutlet weak var shareItem: UIBarButtonItem!
     @IBOutlet var buttons: [UIButton]!
     
     @IBOutlet weak var imageView: UIImageView!
@@ -35,13 +36,28 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         super.viewDidLoad()
         
         loadingView.alpha = 0
-        
+        self.imageView.isUserInteractionEnabled = true
+        let take = UITapGestureRecognizer(target: self, action: #selector(takePhoto(_:)))
+        self.imageView.addGestureRecognizer(take)
         for btn in buttons {
             btn.imageView?.contentMode = .scaleAspectFill
         }
     }
     
     // MARK: - Actions
+    
+    @IBAction func shareImage(_ sender: Any) {
+        guard let image = imageView.image else {
+            return;
+        }
+        
+        let itemView = self.shareItem.value(forKey: "view") as? UIView
+        
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = self.view
+        activityController.popoverPresentationController?.sourceRect = (itemView?.frame)!
+        self.present(activityController, animated: true, completion: nil)
+    }
     
     @IBAction func saveResult(_ sender: Any) {
         guard let image = imageView.image else {
