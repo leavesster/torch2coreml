@@ -26,7 +26,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         mosaic().model,
         the_scream().model,
         udnie().model,
-        candy().model
+        candy().model,
+        feathers().model,
+        la_muse().model
     ]
     
     override func viewDidLoad() {

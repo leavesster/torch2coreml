@@ -17,6 +17,8 @@
 		16C177941F5F0EA10002C6B9 /* the_scream.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 16C177911F5F0EA10002C6B9 /* the_scream.mlmodel */; };
 		16C177951F5F0EA10002C6B9 /* mosaic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 16C177921F5F0EA10002C6B9 /* mosaic.mlmodel */; };
 		16C177961F5F0EA10002C6B9 /* udnie.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 16C177931F5F0EA10002C6B9 /* udnie.mlmodel */; };
+		3985A07C2010FB9F001E295E /* feathers.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3985A07B2010FB9F001E295E /* feathers.mlmodel */; };
+		3985A07E2010FBA7001E295E /* la_muse.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3985A07D2010FBA7001E295E /* la_muse.mlmodel */; };
 		93DD74561F5F40C8004B2891 /* UIImage+scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD74551F5F40C8004B2891 /* UIImage+scaling.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		16C177911F5F0EA10002C6B9 /* the_scream.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = the_scream.mlmodel; sourceTree = "<group>"; };
 		16C177921F5F0EA10002C6B9 /* mosaic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mosaic.mlmodel; sourceTree = "<group>"; };
 		16C177931F5F0EA10002C6B9 /* udnie.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie.mlmodel; sourceTree = "<group>"; };
+		3985A07B2010FB9F001E295E /* feathers.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = feathers.mlmodel; sourceTree = "<group>"; };
+		3985A07D2010FBA7001E295E /* la_muse.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = la_muse.mlmodel; sourceTree = "<group>"; };
 		93DD74551F5F40C8004B2891 /* UIImage+scaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+scaling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 		164CAAC61F54C12B00A1CEF1 /* coreml_models */ = {
 			isa = PBXGroup;
 			children = (
+				3985A07D2010FBA7001E295E /* la_muse.mlmodel */,
+				3985A07B2010FB9F001E295E /* feathers.mlmodel */,
 				16C177921F5F0EA10002C6B9 /* mosaic.mlmodel */,
 				16C177911F5F0EA10002C6B9 /* the_scream.mlmodel */,
 				16C177931F5F0EA10002C6B9 /* udnie.mlmodel */,
@@ -165,9 +171,11 @@
 				16C177951F5F0EA10002C6B9 /* mosaic.mlmodel in Sources */,
 				16C177901F5F0E900002C6B9 /* candy.mlmodel in Sources */,
 				167819161F54F73C009973BB /* StyleTransferInput.swift in Sources */,
+				3985A07E2010FBA7001E295E /* la_muse.mlmodel in Sources */,
 				1622C3CC1F3269580059889E /* ViewController.swift in Sources */,
 				1622C3CA1F3269580059889E /* AppDelegate.swift in Sources */,
 				16C177961F5F0EA10002C6B9 /* udnie.mlmodel in Sources */,
+				3985A07C2010FB9F001E295E /* feathers.mlmodel in Sources */,
 				16C177941F5F0EA10002C6B9 /* the_scream.mlmodel in Sources */,
 				93DD74561F5F40C8004B2891 /* UIImage+scaling.swift in Sources */,
 			);
